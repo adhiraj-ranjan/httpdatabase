@@ -47,7 +47,9 @@ def get():
 def update():
     key = request.args.get('key')
     value = request.args.get('value')
-    if key and value:
+    if key:
+        if not value:
+            value = ""
         response = api.update(key, value)
     else:
         return jsonify({"response": "invalid arguments"})
