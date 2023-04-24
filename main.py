@@ -41,8 +41,7 @@ def get():
         return jsonify({"key": key,
                         "value": response})
     else:
-        return jsonify({"response": "key not found",
-                        "value": "none"})
+        return jsonify({"response": "key not found"})
 
 @app.route('/update')
 def update():
