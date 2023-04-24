@@ -12,13 +12,13 @@ def index():
 def create():
     key = request.args.get('key')
     value = request.args.get('value')
-    if key:
-        if not value:
-            value = ""
-        response = api.create(key, value)
-    else:
+    
+    if not key:
         return jsonify({"response": "invalid arguments"})
-
+    if not value:
+        value = ""
+    response = api.create(key, value)
+        
     if response:
         return jsonify({"key": key,
                         "value": value,
@@ -32,12 +32,12 @@ def create():
 def get():
     key = request.args.get('key')
     
-    if key:
-        response = api.get(key)
-    else:
+    if not key:
         return jsonify({"response": "invalid arguments"})
+        
+    response = api.get(key)
 
-    if response:
+    if response!=False:
         return jsonify({"key": key,
                         "value": response})
     else:
@@ -47,12 +47,10 @@ def get():
 def update():
     key = request.args.get('key')
     value = request.args.get('value')
-    if key:
-        if not value:
-            value = ""
-        response = api.update(key, value)
-    else:
+    if not (key and value):
         return jsonify({"response": "invalid arguments"})
+
+    response = api.update(key, value)
 
     if response:
         return jsonify({"key": key,
@@ -60,7 +58,6 @@ def update():
                         "updated": "true"})
     else:
         return jsonify({"response": "key not found",
-                        "value": "none",
                         "updated": "false"})
 
 @app.route('/delete')
