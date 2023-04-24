@@ -14,7 +14,7 @@ def create():
     value = request.args.get('value')
     if key:
         if not value:
-            value = ""
+            value = "none"
         response = api.create(key, value)
     else:
         return jsonify({"response": "invalid arguments"})
