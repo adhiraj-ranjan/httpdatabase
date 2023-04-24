@@ -8,19 +8,19 @@ To create a new entry, simply send a GET request with the desired key-value pair
 Our JSON HTTP Database API is designed to be user-friendly and accessible to all, making it easy for developers to interact with the database and perform CRUD (Create, Read, Update, Delete) operations seamlessly. Get started with our API now and experience the convenience and simplicity of managing your JSON database through HTTP GET requests.
 
 ### Usage
-Availaible Routes -<br><br><br>
+Availaible Routes -<br><br>
 
     /create - Creates a new key and assigns a value to it<br>
-    i.e. https://windows.pythonanywhere.com?key=&value=<br>
+    i.e. ?key=&value=<br>
     <br><br>
     /get - Gets the value of the provided key<br>
-    i.e. https://windows.pythonanywhere.com?key=<br>
+    i.e. ?key=<br>
     <br><br>
     /update - Updates the key's value to the new value passed<br>
-    i.e. https://windows.pythonanywhere.com?key=&value=<br>
+    i.e. ?key=&value=<br>
     <br><br>
     /delete - Deletes a key from database<br>
-    i.e. https://windows.pythonanywhere.com?key=<br>
+    i.e. ?key=<br>
     
 ### Find Me on :
 <p align="left">
