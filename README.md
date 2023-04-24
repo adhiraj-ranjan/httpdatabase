@@ -1,6 +1,9 @@
 # httpdatabase
 JSON HTTP Database API: Easily create, modify, and delete key-value pairs using HTTP GET requests.
 
+### ready to use instance
+<a href=https://safeapi.onrender.com target="_blank">https://safeapi.onrender.com</a>
+
 API provides a simple and intuitive way to interact with a JSON-based database using HTTP GET requests. With our API, anyone can easily create, modify, and delete key-value pairs in the database.
 
 To create a new entry, simply send a GET request with the desired key-value pair as parameters, and our API will automatically add it to the database. To modify an existing entry, just send a GET request with the updated value, and our API will update the corresponding key-value pair. And if you need to remove an entry, just send a GET request with the key you want to delete, and our API will take care of the rest.
@@ -11,16 +14,16 @@ Our JSON HTTP Database API is designed to be user-friendly and accessible to all
 Availaible Routes -<br><br>
 
     /create - Creates a new key and assigns a value to it<br>
-    i.e. ?key=&value=<br>
+    i.e. /create?key=&value=<br>
     <br><br>
     /get - Gets the value of the provided key<br>
-    i.e. ?key=<br>
+    i.e. /get?key=<br>
     <br><br>
     /update - Updates the key's value to the new value passed<br>
-    i.e. ?key=&value=<br>
+    i.e. /update?key=&value=<br>
     <br><br>
     /delete - Deletes a key from database<br>
-    i.e. ?key=<br>
+    i.e. /delete?key=<br>
     
 ### Find Me on :
 <p align="left">

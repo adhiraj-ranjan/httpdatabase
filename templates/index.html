@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Documentation - JSON HTTP Database</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #777;
+            margin-bottom: 10px;
+        }
+        .route {
+            margin-bottom: 15px;
+        }
+        .route h2 {
+            color: #555;
+            margin-bottom: 5px;
+        }
+        .route p {
+            margin-top: 0;
+        }
+        .example {
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        .github {
+            margin-top: 15px;
+        }
+        .github a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .github a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>API Documentation - JSON HTTP Database</h1>
+    <p>Welcome to the JSON HTTP Database API! Our API provides a secure way to store and manage your credentials or tokens. Below are the available routes and their usage:</p>
+
+    <div class="route">
+        <h2>/create</h2>
+        <p>Creates a new key and assigns a value to it.</p>
+        <p>Usage: <code>/create?key=&amp;value=</code></p>
+        <p>Example: <code><span class="domain"></span>/create?key=my_key&amp;value=my_value</code></p>
+    </div>
+
+    <div class="route">
+        <h2>/get</h2>
+        <p>Gets the value of the provided key.</p>
+        <p>Usage: <code>/get?key=</code></p>
+        <p>Example: <code><span class="domain"></span>/get?key=my_key</code></p>
+    </div>
+
+    <div class="route">
+        <h2>/update</h2>
+        <p>Updates the key's value to the new value passed.</p>
+        <p>Usage: <code>/update?key=&amp;value=</code></p>
+        <p>Example: <code><span class="domain"></span>/update?key=my_key&amp;value=new_value</code></p>
+    </div>
+
+    <div class="route">
+        <h2>/delete</h2>
+        <p>Deletes a key from the database.</p>
+        <p>Usage: <code>/delete?key=</code></p>
+        <p>Example: <code><span class="domain"></span>/delete?key=my_key</code></p>
+    </div>
+
+    <div class="github">
+        <p>For more information, please visit my <a href="https://github.com/adhiraj-ranjan" target="_blank">GitHub profile</a>.</p>
+    </div>
+</body>
+</html>
