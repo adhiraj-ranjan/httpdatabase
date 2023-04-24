@@ -1,8 +1,10 @@
 import firebase_admin
 from firebase_admin import credentials, db
 from os import environ
+from base64 import b64decode
+from json import loads
 
-JSON_CREDS = environ['creds']
+JSON_CREDS = loads(b64decode(environ['creds']).decode())
 
 cred = credentials.Certificate(JSON_CREDS)
 firebase_admin.initialize_app(cred, {
