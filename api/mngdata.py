@@ -14,7 +14,7 @@ firebase_admin.initialize_app(cred, {
 store = db.reference("/keystores")
 
 def create(key, val):
-    if not store.child(key).get():
+    if store.child(key).get()==None:
         store.update({key: val})
         return True
     else:
@@ -22,20 +22,20 @@ def create(key, val):
 
 def get(key):
     value = store.child(key).get()
-    if value:
+    if value!=None:
         return value
     else:
         return False
 
 def update(key, val):
-    if store.child(key).get():
+    if store.child(key).get() != None:
         store.update({key : val})
         return True
     else:
         return False
 
 def delete(key):
-    if store.child(key).get():
+    if store.child(key).get() != None:
         store.child(key).delete()
         return True
     else:
