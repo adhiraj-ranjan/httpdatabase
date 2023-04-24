@@ -11,7 +11,6 @@ firebase_admin.initialize_app(cred, {
 
 store = db.reference("/keystores")
 
-
 def create(key, val):
     if not store.child(key).get():
         store.update({key: val})
