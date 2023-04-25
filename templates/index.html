@@ -77,6 +77,10 @@
     </div>
 </body>
 <script>
-    document.querySelector(".domain").innerHTML = "https://" + window.location.host;
+        var domainElements = document.querySelectorAll(".domain");
+
+        for (var i = 0; i < domainElements.length; i++) {
+          domainElements[i].innerHTML = "https://" + window.location.host;
+        }
     </script>
 </html>
