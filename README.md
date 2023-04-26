@@ -10,6 +10,15 @@ To create a new entry, simply send a GET request with the desired key-value pair
 
 Our JSON HTTP Database API is designed to be user-friendly and accessible to all, making it easy for developers to interact with the database and perform CRUD (Create, Read, Update, Delete) operations seamlessly. Get started with our API now and experience the convenience and simplicity of managing your JSON database through HTTP GET requests.
 
+### Host it yourself
+1. Clone the repository to your local machine.
+2. Install the required Python packages using pip: `pip install -r requirements.txt`
+3. Create a Firebase project and obtain the Firebase credentials (service account key) in JSON format.
+4. Replace the fields in api/datamng.py with your base64 encoded Firebase JSON credentials and your Firebase realtime database url.
+5. Run the Flask application
+6. Open your web browser and go to http://localhost:5000 to access the web app.
+
+
 ### Usage
 Availaible Routes -<br><br>
 
