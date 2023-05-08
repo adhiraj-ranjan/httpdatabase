@@ -1,5 +1,6 @@
 from flask import Flask, jsonify, request, render_template
 from api import mngdata as api
+from waitress import serve
 
 app = Flask(__name__)
 
@@ -80,5 +81,5 @@ def delete():
         return jsonify({"response": "key not found",
                         "deleted": "false"})
 
-if __name__=="__main__":
-    app.run(host="0.0.0.0", threaded=True)
+if __name__ == '__main__':
+    serve(app, host='0.0.0.0')
