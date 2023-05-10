@@ -2,7 +2,7 @@
 JSON HTTP Database API: Easily create, modify, and delete key-value pairs using HTTP GET requests.
 
 ### ready to use instance
-<a href=https://safeapi.onrender.com target="_blank">https://safeapi.onrender.com</a>
+<a href=https://safeapi.itertools.repl.co target="_blank">https://safeapi.itertools.repl.co</a>
 
 API provides a simple and intuitive way to interact with a JSON-based database using HTTP GET requests. With our API, anyone can easily create, modify, and delete key-value pairs in the database.
 
